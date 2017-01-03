@@ -1,0 +1,15 @@
+\begin{equation}
+\label{eq:richards-newton-deriv}
+    \bfJ_{ \bfpsi\nnm} =
+    \frac{1}{\Delta t} \deriv{\bftheta(\bfpsi\nnm)}{\bfpsi\nnm}
+    +
+    \deriv{}{\bfpsi\nnm}
+    \left(
+    \bfD
+        \diag{\bfk_{Av}\nnm}
+    \bfD^{\top}\bfpsi\nnm
+    \right)
+    +
+    \bfD_z^{\top}
+    \deriv{\bfk_{Av}\nnm}{\bfpsi\nnm}
+\end{equation}

@@ -1,0 +1,37 @@
+\begin{equation}
+\label{eq:richards-timestep-deriv-matrix}
+\overbrace{
+    \left[
+    \begin{array}{cccc}
+        \mathbf{A}_0(\boldsymbol{\psi}_1)\\
+        \mathbf{A}_{-1}(\boldsymbol{\psi}_1)&\mathbf{A}_0(\boldsymbol{\psi}_2)\\
+        &\mathbf{A}_{-1}(\boldsymbol{\psi}_2)&\mathbf{A}_0(\boldsymbol{\psi}_3)\\
+        &\qquad\ddots&\qquad\ddots\\
+        &&\mathbf{A}_{-1}(\boldsymbol{\psi}_{n_{t}-1})&\mathbf{A}_0(\boldsymbol{\psi}_{n_{t}})\\
+    \end{array}
+    \right]
+}^{\mathbf{A}(\boldsymbol{\Psi},\mathbf{m})}
+\overbrace{
+    \left[
+    \begin{array}{c}
+        \frac{\partial \boldsymbol{\psi}_1}{\partial \mathbf{m}}\\
+        \frac{\partial \boldsymbol{\psi}_2}{\partial \mathbf{m}}\\
+        \vdots\\
+        \frac{\partial \boldsymbol{\psi}_{n_{t}-1}}{\partial \mathbf{m}}\\
+        \frac{\partial \boldsymbol{\psi}_{n_{t}}}{\partial \mathbf{m}}\\
+    \end{array}
+    \right]
+}^{\frac{\partial\boldsymbol{\Psi}}{\partial\mathbf{m}}}
+    =
+\overbrace{
+    \left[
+    \begin{array}{c}
+        \mathbf{B_1}(\boldsymbol{\psi}_1)\\
+        \mathbf{B_2}(\boldsymbol{\psi}_2)\\
+        \vdots\\
+        \mathbf{B_{n-1}}(\boldsymbol{\psi}_{n_{t}-1})\\
+        \mathbf{B_n}(\boldsymbol{\psi}_{n_{t}})\\
+    \end{array}
+    \right]
+}^{\mathbf{B}(\boldsymbol{\Psi},\mathbf{m})}
+\end{equation}

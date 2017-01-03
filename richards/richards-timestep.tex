@@ -1,0 +1,12 @@
+\begin{align}
+\label{eq:richards-timestep}
+F(\boldsymbol{\psi}^{n+1}(\mathbf{m}),\boldsymbol{\psi}^n(\mathbf{m}),\mathbf{m}) =
+\frac{\boldsymbol{\theta}^{n+1}(\boldsymbol{\psi}^{n+1}) - \boldsymbol{\theta}^n(\boldsymbol{\psi}\n)}{\Delta t}
+\nonumber\\+
+\ \mathbf{D}
+    \text{ diag}\left(\mathbf{k}_{Av}(\boldsymbol{\psi}^{n+1},\mathbf{m})\right)
+    \mathbf{D}^{\top} \boldsymbol{\psi}^{n+1}
++
+\mathbf{D}_{z} \mathbf{k}_{Av}(\boldsymbol{\psi}^{n+1},\mathbf{m})
+= 0
+\end{align}

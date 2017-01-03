@@ -1,0 +1,33 @@
+\begin{align}
+\label{eq:richards-timestep-deriv}
+\frac{1}{\Delta t}
+\left(
+    \frac{\partial \boldsymbol{\theta}^{n+1}}{\partial\boldsymbol{\psi}^{n+1}}
+    \frac{\partial \boldsymbol{\psi}^{n+1}}{\partial\mathbf{m}}
+    -
+    \frac{\partial \boldsymbol{\theta}^n}{\partial\boldsymbol{\psi}^n}
+    \frac{\partial \boldsymbol{\psi}^n}{\partial\mathbf{m}}
+\right)
++
+\mathbf{D}
+    \text{ diag}\left( \mathbf{D}^{\top} \boldsymbol{\psi}^{n+1} \right)
+    \left(
+        \frac{\partial \mathbf{k}_{Av}}{\partial\mathbf{m}} +
+        \frac{\partial \mathbf{k}_{Av}}{\partial\boldsymbol{\psi}^{n+1}}
+        \frac{\partial \boldsymbol{\psi}^{n+1}}{\partial\mathbf{m}}
+    \right)
+\nonumber\\
++\
+\mathbf{D}
+    \text{ diag}\left( \mathbf{k}_{Av}(\boldsymbol{\psi}^{n+1}) \right)
+\mathbf{D}^{\top}
+\frac{\partial \boldsymbol{\psi}^{n+1}}{\partial\mathbf{m}}
++
+\mathbf{D}_{z}^{\top}
+\left(
+    \frac{\partial \mathbf{k}_{Av}}{\partial\mathbf{m}} +
+    \frac{\partial \mathbf{k}_{Av}}{\partial\boldsymbol{\psi}^{n+1}}
+    \frac{\partial \boldsymbol{\psi}^{n+1}}{\partial\mathbf{m}}
+\right)
+& = 0
+\end{align}

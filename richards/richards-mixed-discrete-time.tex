@@ -1,0 +1,18 @@
+\begin{equation}
+\label{eq:richards-mixed-discrete-time}
+    F(\boldsymbol{\psi}^{n+1},\boldsymbol{\psi}^n) = \frac{
+    \boldsymbol{\theta}(\boldsymbol{\psi}^{n+1}) - \boldsymbol{\theta}(\boldsymbol{\psi}^n)
+    }{\Delta t}
+    + \mathbf{D}
+        \text{ diag}
+        \left(
+            \mathbf{k}_{Av}(\boldsymbol{\psi}^{n+1})
+        \right)
+    \mathbf{D}^{\top} \boldsymbol{\psi}^{n+1}
+    + \mathbf{D}_z^{\top}
+        \left(
+            \mathbf{k}_{Av}(\boldsymbol{\psi}^{n+1})
+        \right)
+    =
+    0
+\end{equation}

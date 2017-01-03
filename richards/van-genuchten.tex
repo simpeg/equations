@@ -1,0 +1,28 @@
+\begin{subequations}
+\label{eq:van-genuchten}
+\begin{equation}
+\label{eq:van-genuchten-water-retention}
+    \theta(\psi) =
+    \left\{\begin{aligned}
+        \theta_r& + \frac{\theta_s- \theta_r}{(1+|\alpha \psi|^n)^m}  & \psi < 0 \\
+        \theta_s& & \psi \ge 0
+    \end{aligned}\right.
+\end{equation}
+\begin{equation}
+\label{eq:van-genuchten-hydraulic-conductivity}
+    k(\psi) =
+    \left\{\begin{aligned}
+        K_s & \theta_e(\psi)^l(1-(1- \theta_e(\psi)^{-m})^m)^2 & \psi < 0 \\
+        K_s& & \psi \ge 0
+    \end{aligned}\right.
+\end{equation}
+\end{subequations}
+where
+\begin{equation}
+\label{eq:van-genuchten-params}
+    \theta_e(\psi) = \frac{\theta(\psi) - \theta_r}{\theta_s - \theta_r},
+    \qquad
+    m=1- \frac{1}{n},
+    \qquad
+    n > 1
+\end{equation}

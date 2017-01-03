@@ -1,0 +1,37 @@
+\begin{align}
+\label{eq:richards-timestep-deriv-blocks}
+\overbrace{
+    \left[
+        \frac{1}{\Delta t}
+        \frac{\partial \boldsymbol{\theta}^{n+1}}{\partial\boldsymbol{\psi}^{n+1}}
+        +\mathbf{D}
+        \text{ diag}\left( \mathbf{D}^{\top} \boldsymbol{\psi}^{n+1} \right)
+        \frac{\partial \mathbf{k}_{Av}}{\partial\boldsymbol{\psi}^{n+1}}
+        +\mathbf{D}
+        \text{ diag}\left( \mathbf{k}_{Av}(\boldsymbol{\psi}^{n+1},\mathbf{m}) \right)
+        \mathbf{D}^{\top}
+        + \mathbf{D}_{z}
+        \frac{\partial \mathbf{k}_{Av}}{\partial\boldsymbol{\psi}^{n+1}}
+    \right]
+}^{\mathbf{A}_0(\boldsymbol{\psi}^{n+1})}
+\frac{\partial \boldsymbol{\psi}^{n+1}}{\partial\mathbf{m}}
+\nonumber\\
++
+\underbrace{
+    \left[
+        -\frac{1}{\Delta t}
+        \frac{\partial \boldsymbol{\theta}^n}{\partial\boldsymbol{\psi}^n}
+    \right]
+}_{\mathbf{A}_{-1}(\boldsymbol{\psi}^n)}
+\frac{\partial \boldsymbol{\psi}^n}{\partial\mathbf{m}}
+=
+\underbrace{
+\left[
+    \mathbf{D}
+    \text{ diag}\left( \mathbf{D}^{\top} \boldsymbol{\psi}^{n+1} \right)
+    \frac{\partial \mathbf{k}_{Av}}{\partial\mathbf{m}}
+    +\mathbf{D}^{\top}_{z}
+    \frac{\partial \mathbf{k}_{Av}}{\partial\mathbf{m}}
+\right]
+}_{\mathbf{B}(\psi^{n+1})}&
+\end{align}
