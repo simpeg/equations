@@ -40,3 +40,23 @@ Copy paste equations. Booooo
 * Creating [modular documents](https://en.wikibooks.org/wiki/LaTeX/Modular_Documents) in latex using `input` and `include`
 * SimPEG project at [http://simpeg.xyz](http://simpeg.xyz)
 * [GitProject](https://github.com/3ptscience/git-project) for inclusion of this repository in other writing projects
+
+# Example
+
+## latex
+
+In a latex document, clone the github repository into your working path (use git project or alternative).
+In the header of your document input the header material:
+
+```
+\input{equations/index}
+```
+
+When you want to include a specific figure, just call that up:
+
+```
+\input{equations/richards/richards-objective-deriv}
+```
+
+This keeps your latex code clean. In our experience, we often work on google docs for collaborative document
+this allows us to just write minimal latex and copy paste it when ready for a publication view.
