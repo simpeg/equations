@@ -36,6 +36,7 @@ Copy paste equations. Booooo
 
 ## Connections
 
+* Listen to Lindsey Heagy talk about [equation banks](https://youtu.be/IW2LDsevvDk?t=15m8s) in [GeoSci](http://geosci.xyz) at SciPy2016
 * Creating [modular documents](https://en.wikibooks.org/wiki/LaTeX/Modular_Documents) in latex using `input` and `include`
 * SimPEG project at [http://simpeg.xyz](http://simpeg.xyz)
 * [GitProject](https://github.com/3ptscience/git-project) for inclusion of this repository in other writing projects
