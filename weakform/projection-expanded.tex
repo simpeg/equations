@@ -1,0 +1,36 @@
+\begin{equation}
+\label{eq:normalProjection}
+    \begin{aligned}
+    \overbrace{
+        \left[\begin{smallmatrix}j^{(1)} \\j^{(3)} \\\end{smallmatrix}\right]
+    }^{\mathbf{Q}_{(i)}\mathbf{j}_\text{mesh}}&=
+    \overbrace{
+        \left[\begin{smallmatrix}n^{(1)}_x & n^{(1)}_y \\n^{(3)}_x & n^{(3)}_y \\\end{smallmatrix}\right]
+    }^{\mathbf{N}_{(i)}}
+    \overbrace{
+        \left[\begin{smallmatrix}j_x \\j_y \\\end{smallmatrix}\right]_{(1)}
+    }^{\mathbf{j}_\text{cart}}
+    ,\\
+    \left[\begin{smallmatrix}j^{(1)} \\j^{(4)} \\\end{smallmatrix}\right]&=\left[
+    \begin{smallmatrix}
+        - \mathbf{n}_{(1)}^\top - \\
+        - \mathbf{n}_{(4)}^\top - \\
+    \end{smallmatrix}\right]\left[\begin{smallmatrix}j_x \\j_y \\\end{smallmatrix}\right]_{(2)}
+    ,\\
+    \left[
+        \begin{smallmatrix}
+            0 & 1 & 0 & 0 \\
+            0 & 0 & 1 & 0 \\
+        \end{smallmatrix}
+    \right] \mathbf{j}_{\text{mesh}} &=
+    \left[\begin{smallmatrix}
+        - \mathbf{n}_{(2)}^\top - \\
+        - \mathbf{n}_{(3)}^\top - \\
+    \end{smallmatrix}\right]
+    \mathbf{j}_\text{cart}^{(3)}
+    ,\\
+    \mathbf{Q}_{(4)} ~ \mathbf{j}_{\text{mesh}}&=
+    \mathbf{N}_{(4)} ~
+    \mathbf{j}_\text{cart}^{(4)}
+    \end{aligned}
+\end{equation}

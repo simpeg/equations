@@ -1,0 +1,14 @@
+\begin{equation}
+\int_{\Omega} \frac{1}{\sigma}~\vec{j} \cdot \vec{f} \; {\partial v} & =
+- \int_{\Omega}{\nabla \phi  \cdot \vec{f}}\; {\partial v}
+\end{equation}
+which can be rearranged through the use of a vector identity for a product of a scalar and a vector
+$$\nabla \cdot ( s \vec{v} ) = s ~( \nabla \cdot \vec{v}) +  \nabla s \cdot \vec{v}$$
+and the Divergence theorem to form
+\begin{equation}
+\int_{\Omega} \frac{1}{\sigma}~\vec{j} \cdot \vec{f} \; {\partial v} = -
+\left(
+    - \int_{\Omega}{(\phi ~ \nabla \cdot \vec{f})} \; {\partial v}
+    + \int_{\partial \Omega}{ \phi ~ \vec{f} \cdot \mathbf{n}} \; {\partial v}
+\right)
+\end{equation}

@@ -1,0 +1,16 @@
+\begin{equation}
+\begin{aligned}
+\mathbf{M}^f_{\Sigma^{-1}} &=
+    \frac{1}{2^d}
+    \left(\sum_{i=1}^{2^d}
+        \mathbf{Q}_i^{\top} \mathbf{N}_i^{-\top} \sqrt{v_{\text{cell}}}
+            ~ \Sigma^{-1}
+        \sqrt{v_{\text{cell}}}  ~ \mathbf{N}_i^{-1} \mathbf{Q}_i
+    \right)
+\\
+& =
+    \sum_{i=1}^{2^d}
+    \mathbf{P}_i^\top \Sigma^{-1} \mathbf{P}_i , \qquad \text{where}\\
+\mathbf{P}_i & = \sqrt{ \frac{1}{2^d} \mathbf{I}^d \otimes \text{diag} \left( \mathbf{v} \right)} \mathbf{N}_i^{-1} \mathbf{Q}_i
+\end{aligned}
+\end{equation}
