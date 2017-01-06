@@ -1,0 +1,25 @@
+\begin{equation}
+\mathbf{P}_i^\top\Sigma\mathbf{y} =
+\mathbf{P}_i^\top
+\left[\begin{matrix}
+    \boldsymbol{\sigma}_{1} & \boldsymbol{\sigma}_{4} & \boldsymbol{\sigma}_{5} \\
+    \boldsymbol{\sigma}_{4} & \boldsymbol{\sigma}_{2} & \boldsymbol{\sigma}_{6} \\
+    \boldsymbol{\sigma}_{5} & \boldsymbol{\sigma}_{6} & \boldsymbol{\sigma}_{3}
+\end{matrix}\right]
+\left[
+    \begin{matrix}
+        \mathbf{y}_1\\
+        \mathbf{y}_2\\
+        \mathbf{y}_3\\
+    \end{matrix}
+\right]
+=
+\mathbf{P}_i^\top
+\left[
+    \begin{matrix}
+        \boldsymbol{\sigma}_{1} \odot \mathbf{y}_1 + \boldsymbol{\sigma}_{4} \odot \mathbf{y}_2 + \boldsymbol{\sigma}_{5} \odot \mathbf{y}_3\\
+        \boldsymbol{\sigma}_{4} \odot \mathbf{y}_1 + \boldsymbol{\sigma}_{2} \odot \mathbf{y}_2 + \boldsymbol{\sigma}_{6} \odot \mathbf{y}_3\\
+        \boldsymbol{\sigma}_{5} \odot \mathbf{y}_1 + \boldsymbol{\sigma}_{6} \odot \mathbf{y}_2 + \boldsymbol{\sigma}_{3} \odot \mathbf{y}_3\\
+    \end{matrix}
+\right]
+\end{equation}
