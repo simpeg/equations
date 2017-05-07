@@ -2,14 +2,14 @@
 \label{eq:richards-newton-deriv}
     \bfJ_{ \bfpsi\nnm} =
     \frac{1}{\Delta t} \deriv{\bftheta(\bfpsi\nnm)}{\bfpsi\nnm}
-    +
+    -
     \deriv{}{\bfpsi\nnm}
     \left(
     \bfD
         \diag{\bfk_{Av}(\bfpsi\nnm)}
-    \bfD^{\top}\bfpsi\nnm
+    \mathbf{G}\bfpsi\nnm
     \right)
-    +
-    \bfD_z^{\top}
+    -
+    \mathbf{G}_z
     \deriv{\bfk_{Av}(\bfpsi\nnm)}{\bfpsi\nnm}
 \end{equation}

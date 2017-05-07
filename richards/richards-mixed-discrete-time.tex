@@ -3,13 +3,13 @@
     F(\boldsymbol{\psi}^{n+1},\boldsymbol{\psi}^n) = \frac{
     \boldsymbol{\theta}(\boldsymbol{\psi}^{n+1}) - \boldsymbol{\theta}(\boldsymbol{\psi}^n)
     }{\Delta t}
-    + \mathbf{D}
+    - \mathbf{D}
         \text{ diag}
         \left(
             \mathbf{k}_{Av}(\boldsymbol{\psi}^{n+1})
         \right)
-    \mathbf{D}^{\top} \boldsymbol{\psi}^{n+1}
-    + \mathbf{D}_z^{\top}
+    \mathbf{G} \boldsymbol{\psi}^{n+1}
+    - \mathbf{G}_z
         \left(
             \mathbf{k}_{Av}(\boldsymbol{\psi}^{n+1})
         \right)

@@ -4,13 +4,13 @@
     \left[
         \frac{1}{\Delta t}
         \frac{\partial \boldsymbol{\theta}^{n+1}}{\partial\boldsymbol{\psi}^{n+1}}
-        +\mathbf{D}
-        \text{ diag}\left( \mathbf{D}^{\top} \boldsymbol{\psi}^{n+1} \right)
+        -\mathbf{D}
+        \text{ diag}\left( \mathbf{G} \boldsymbol{\psi}^{n+1} \right)
         \frac{\partial \mathbf{k}_{Av}}{\partial\boldsymbol{\psi}^{n+1}}
-        +\mathbf{D}
+        -\mathbf{D}
         \text{ diag}\left( \mathbf{k}_{Av}(\boldsymbol{\psi}^{n+1},\mathbf{m}) \right)
-        \mathbf{D}^{\top}
-        + \mathbf{D}_{z}
+        \mathbf{G}
+        - \mathbf{G}_{z}
         \frac{\partial \mathbf{k}_{Av}}{\partial\boldsymbol{\psi}^{n+1}}
     \right]
 }^{\mathbf{A}_0(\boldsymbol{\psi}^{n+1})}
@@ -27,10 +27,10 @@
 =
 \underbrace{
 \left[
-    \mathbf{D}
-    \text{ diag}\left( \mathbf{D}^{\top} \boldsymbol{\psi}^{n+1} \right)
+    -\mathbf{D}
+    \text{ diag}\left( \mathbf{G} \boldsymbol{\psi}^{n+1} \right)
     \frac{\partial \mathbf{k}_{Av}}{\partial\mathbf{m}}
-    +\mathbf{D}^{\top}_{z}
+    -\mathbf{G}_{z}
     \frac{\partial \mathbf{k}_{Av}}{\partial\mathbf{m}}
 \right]
 }_{\mathbf{B}(\psi^{n+1})}&

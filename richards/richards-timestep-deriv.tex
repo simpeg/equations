@@ -8,22 +8,22 @@
     \frac{\partial \boldsymbol{\theta}^n}{\partial\boldsymbol{\psi}^n}
     \frac{\partial \boldsymbol{\psi}^n}{\partial\mathbf{m}}
 \right)
-+
+-
 \mathbf{D}
-    \text{ diag}\left( \mathbf{D}^{\top} \boldsymbol{\psi}^{n+1} \right)
+    \text{ diag}\left( \mathbf{G} \boldsymbol{\psi}^{n+1} \right)
     \left(
         \frac{\partial \mathbf{k}_{Av}}{\partial\mathbf{m}} +
         \frac{\partial \mathbf{k}_{Av}}{\partial\boldsymbol{\psi}^{n+1}}
         \frac{\partial \boldsymbol{\psi}^{n+1}}{\partial\mathbf{m}}
     \right)
 \nonumber\\
-+\
+-\
 \mathbf{D}
     \text{ diag}\left( \mathbf{k}_{Av}(\boldsymbol{\psi}^{n+1}) \right)
-\mathbf{D}^{\top}
+\mathbf{G}
 \frac{\partial \boldsymbol{\psi}^{n+1}}{\partial\mathbf{m}}
-+
-\mathbf{D}_{z}^{\top}
+-
+\mathbf{G}_{z}
 \left(
     \frac{\partial \mathbf{k}_{Av}}{\partial\mathbf{m}} +
     \frac{\partial \mathbf{k}_{Av}}{\partial\boldsymbol{\psi}^{n+1}}
