@@ -1,0 +1,21 @@
+\begin{equation}
+\begin{aligned}
+\mathbf{J}[\mathbf{m}] = \frac{d \mathcal{F}[\mathbf{m}]}{ d \mathbf{m}} = &
+    \frac{\text{d}\mathbf{P}(\mathbf{f})}{\text{d}\mathbf{f}}
+    \frac{\text{d}\mathbf{f}}{\text{d}\boldsymbol{\alpha}}
+    \frac{\text{d}\boldsymbol{\alpha}}{\text{d}\mathbf{m}} \\
+= &
+    \underbrace{
+    \frac{\text{d}\mathbf{P}(\mathbf{f})}{\text{d}\mathbf{f}}
+    }_{\text{Receivers}}
+    \underbrace{
+    \left(\vphantom{\frac{\partial\mathbf{f}}{\partial\mathbf{u}}} \right.
+\frac{\partial\mathbf{f}}{\partial\mathbf{u}} \overbrace{\frac{\text{d}\mathbf{u}}{\text{d}\boldsymbol{\alpha}}}^{\text{Physics}}
+        + \frac{\partial\mathbf{f}}{\partial\mathbf{s}} \overbrace{\frac{\text{d}\mathbf{s}}{\text{d}\boldsymbol{\alpha}}}^{\text{Sources}}
+        + \frac{\partial\mathbf{f}}{\partial\boldsymbol{\alpha}}
+    \left. \vphantom{\frac{\partial\mathbf{f}}{\partial\mathbf{u}}}\right)
+     }_{\text{Fields}}
+    \underbrace{\frac{\text{d}\boldsymbol{\alpha}}{\text{d}\mathbf{m}}}_{\text{Properties}}
+    \label{eq:generalsensitivity}
+\end{aligned}
+\end{equation}

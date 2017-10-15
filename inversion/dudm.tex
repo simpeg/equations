@@ -1,0 +1,14 @@
+\begin{equation}
+    \frac{\text{d}\mathbf{u}}{\text{d}\mathbf{m}} = \mathbf{A}^{-1}(\mathbf{m})
+    \left(\vphantom{\frac{1}{2}}\right.
+    - \underbrace{\frac{\partial \mathbf{A}(\mathbf{m}) \mathbf{u^{\text{fix}}}}{\partial \mathbf{m}}
+        }_{\texttt{getADeriv}}
+        +
+\underbrace{
+         \frac{\partial\mathbf{q}}{\partial\mathbf{s}} \frac{\text{d} \mathbf{s}}{\text{d} \mathbf{m}}
+        + \frac{\partial\mathbf{q}}{\partial\mathbf{m}}
+        }_{\texttt{getRHSDeriv}}
+    \left. \vphantom{\frac{1}{2}}
+    \right)
+\label{eq:dudm}
+\end{equation}

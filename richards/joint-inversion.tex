@@ -1,0 +1,16 @@
+\begin{equation}
+\label{eq:richards-joint-inversion}
+\begin{aligned}
+{\rm arg}\min_{\mathbf{m}}\ \Phi ( \mathbf{m} ) =&
+\frac{1}{2} \left\|\mathbf{W}_d (\mathbf{d}_{\rm pred}(\mathbf{m})- \mathbf{d}_{\rm obs}) \right\|^2_2 + \\
+&\frac { \beta  }{ 2 }
+\sum_{\{\cdot\} = K_s,~\alpha,~n,~\theta_s,~\theta_r}
+\left(
+    \alpha_{\{\cdot \}}
+    \left\|
+        \mathbf{W}_{m_{\{\cdot \}}}
+        (\mathcal{M}_{\{\cdot \}}(\mathbf{m})- \mathbf{m}_{\rm ref_{\{\cdot \}} })
+    \right\|^2_2
+\right)
+\end{aligned}
+\end{equation}
